@@ -458,6 +458,7 @@ internal sealed class TextBlock : IDisposable
 		LastTexture = Texture;
 
 		Texture = null;
+		OnTextureChanged?.Invoke();
 	}
 
 	int lastSizeHash = 0;
